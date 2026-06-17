@@ -1,0 +1,35 @@
+#============================
+#           Theming
+#============================
+theme = catppuccin-frappe.conf
+
+#============================
+#           Shaders
+#============================
+custom-shader = ./shaders/cursor_smear.glsl
+#============================
+#           General
+#============================
+quick-terminal-position = "center"
+background-opacity = 0.85
+background-blur = true
+font-family = "Ubuntu Mono Nerd"
+font-size = 14
+bold-is-bright = "true"
+scrollbar = "never"
+window-decoration = "none"
+
+#============================
+#           Keybinds
+#============================
+keybind = global:ctrl+s=toggle_quick_terminal
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+keybind = alt+ctrl+h=resize_split:left,10
+keybind = alt+ctrl+j=resize_split:down,10
+keybind = alt+ctrl+k=resize_split:up,10
+keybind = alt+ctrl+l=resize_split:right,10
+keybind = shift+enter=text:\n

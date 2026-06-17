@@ -1,0 +1,15 @@
+# ── tmux ──────────────────────────────────────────────
+tmux/plugins/
+
+# ── zsh / Zinit ────────────────────────────────────────
+zsh/.zinit/
+zsh/.local/share/zinit/
+
+# ── nvim ───────────────────────────────────────────────
+# lazy-lock.json tracks exact plugin versions — exclude if you
+# don't want to pin them across machines; keep it if you do.
+nvim/lazy-lock.json
+
+# ── local overrides ────────────────────────────────────
+# Any *.local file (e.g. .zshrc.local) for machine-specific tweaks
+*.local
