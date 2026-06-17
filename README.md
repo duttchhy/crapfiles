@@ -17,7 +17,7 @@ Personal configuration files for **Arch / CachyOS / EndeavourOS**, managed with 
 ## INSTALL
 
 ```sh
-curl -fsSL https://github.com/duttchhy/crapfiles/install-script.sh | sh
+curl -fsSL https://raw.githubusercontent.com/duttchhy/crapfiles/refs/heads/master/install-script.sh | sh
 ```
 
 ```
@@ -112,6 +112,17 @@ cd ~/.dotfiles
 git pull                            # pull dotfiles changes
 git submodule update --remote nvim  # pull latest nvim config
 ```
+
+---
+
+## KDE Plasma KWIN stuff
+
+Install the following:
+
+- [Better Blur](https://github.com/xarblu/kwin-effects-better-blur-dx)
+- [Krohnkite](https://github.com/esjeon/krohnkite)
+- [Geometry Change](https://store.kde.org/p/2136283)
+- [Klassy Window Decorations](https://github.com/paulmcauley/klassy)
 
 ---
 

@@ -1,0 +1,121 @@
+format = """
+[](#303446)\
+$python\
+$username\
+[](bg:#414559 fg:#303446)\
+$directory\
+[](fg:#414559 bg:#51576d)\
+$git_branch\
+$git_status\
+[](fg:#51576d bg:#8caaee)\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[](fg:#8caaee bg:#81c8be)\
+$docker_context\
+[](fg:#81c8be bg:#89dceb)\
+$time\
+[ ](fg:#f9e2af)\
+"""
+
+command_timeout = 5000
+add_newline = true
+
+[username]
+show_always = true
+style_user = "bg:#303446"
+style_root = "bg:#303446"
+format = '[$user ]($style)'
+
+[directory]
+style = "bg:#414559"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[c]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:#81c8be"
+format = '[ $symbol $context ]($style)'
+
+[elixir]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[elm]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:#51576d"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#51576d"
+format = '[$all_status$ahead_behind ]($style)'
+
+[golang]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[nim]
+symbol = " "
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[python]
+style = "bg:#303446"
+format = '[(\($virtualenv\) )]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#8caaee"
+format = '[ $symbol ($version) ]($style)'
+
+[time]
+disabled = true
+time_format = "%R"
+style = "bg:#babbf1"
+format = '[ $time ]($style)'
+
